@@ -103,4 +103,17 @@ public class CalculatorTest {
 
         assertFalse(actual);
     }
+
+    @Test
+    public void shouldEvaluate() {
+        final double actual = calcUnderTest.eval("1+2+3");
+
+        assertEquals(6, actual, .001);
+    }
+
+    @Test
+    public void factorialTestOne() {
+        long actual = calcUnderTest.factorial(4);
+        assertEquals(24, actual);
+    }
 }
