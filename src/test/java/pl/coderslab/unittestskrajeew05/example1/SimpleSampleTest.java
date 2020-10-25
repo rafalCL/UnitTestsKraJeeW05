@@ -7,7 +7,13 @@ import static org.junit.Assert.*;
 public class SimpleSampleTest {
     @Test
     public void firstTest(){
-        assertTrue(2+2==4);
+        // given
+        final int firstNum = 2;
+        final int secondNum = 2;
+        // when
+        final int sum = firstNum + secondNum;
+        // then
+        assertEquals(4, sum);
     }
 
     @Test
